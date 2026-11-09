@@ -1,0 +1,17 @@
+# Selo
+
+> Selo is a local, open-source (MIT) MCP server by Falcao SL. It drives the Apple Mail app already configured on the user's Mac. It can list, search, read, download an attachment, compose, attach files, reply, reply all, forward, send, mark, move, archive, move a message to Trash, unsubscribe from a list via the List-Unsubscribe header, and report local suspicion signals. It asks for no password and has no server of its own. Delete is Trash, recoverable in Mail. check_message is a heuristic, not an antivirus. macOS and Node.js 18 or newer. Not a hosted website yet: the public page is the GitHub repository.
+
+## Pages
+
+- [Repository](https://github.com/Falcao-SL/Selo)
+- [How to use it (English)](https://github.com/Falcao-SL/Selo/blob/main/docs/USE.md)
+- [Como usar (português)](https://github.com/Falcao-SL/Selo/blob/main/docs/USO.md)
+
+## Facts
+
+- It talks to Mail.app through JavaScript for Automation. Accounts are the ones already in Mail.
+- send_message, reply_message, reply_all, forward_message, and unsubscribe really leave the machine. trash_message moves mail to Trash.
+- Attachments download to ~/Downloads/Selo with the macOS quarantine flag. Programs, installers, and scripts are refused.
+- One-Click unsubscribe is an HTTPS POST on port 443. A bare link in the message body is not opened.
+- License: MIT. Price: none. Contact: dev@falcaosl.com. Studio: https://falcaosl.com/

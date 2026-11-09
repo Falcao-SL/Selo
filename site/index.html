@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selo — Apple Mail for a coding agent</title>
+<meta name="description" content="Selo is a local MCP server. It drives the Apple Mail app already on this Mac: read, reply, reply all, forward, attach, send, download attachments, delete to Trash, unsubscribe, and flag suspicious mail.">
+<link rel="canonical" href="https://github.com/Falcao-SL/Selo">
+<link rel="alternate" hreflang="en" href="https://github.com/Falcao-SL/Selo/blob/main/site/index.html">
+<link rel="alternate" hreflang="pt-BR" href="https://github.com/Falcao-SL/Selo/blob/main/site/index.pt.html">
+<link rel="alternate" hreflang="x-default" href="https://github.com/Falcao-SL/Selo">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Selo — Apple Mail for a coding agent">
+<meta property="og:description" content="A local, open-source MCP server for the Mail app on this Mac. It sends, replies, attaches, deletes to Trash, and unsubscribes for real.">
+<meta property="og:url" content="https://github.com/Falcao-SL/Selo">
+<link rel="icon" href="selo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&family=Space+Grotesk:wght@600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="selo.svg" width="28" height="28" alt="">Selo</a>
+    <nav aria-label="Language">
+      <a href="index.html" aria-current="page">English</a>
+      <a href="index.pt.html">Português</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">macOS · Mail.app · MCP · MIT</p>
+      <h1>Apple Mail, for the agent on this Mac.</h1>
+      <p class="lead">Selo is a local MCP server. It uses the accounts already in the Mail app. It reads, replies, replies to all, forwards, attaches files, sends, downloads attachments, deletes to Trash, unsubscribes from a list, and points at signs a message looks suspicious.</p>
+      <p>Sending, replying, forwarding, deleting, and unsubscribing really happen. Delete goes to Mail's Trash. The suspicion check is a local heuristic, not an antivirus. Selo stores no password and has no server of its own.</p>
+      <p class="actions"><a class="btn" href="https://github.com/Falcao-SL/Selo/blob/main/docs/USE.md">How to use it</a><a class="ghost" href="https://github.com/Falcao-SL/Selo">Repository</a></p>
+    </div>
+    <img src="selo.svg" width="96" height="96" alt="">
+  </div>
+  <section>
+    <div class="wrap">
+      <h2>What the agent can ask</h2>
+      <table>
+        <thead><tr><th>Ask</th><th>Tool</th></tr></thead>
+        <tbody>
+          <tr><td>What is unread?</td><td><code>unread_summary</code></td></tr>
+          <tr><td>Read this message</td><td><code>read_message</code></td></tr>
+          <tr><td>Does it look suspicious?</td><td><code>check_message</code></td></tr>
+          <tr><td>Download the attachment</td><td><code>save_attachment</code></td></tr>
+          <tr><td>Open a draft, do not send</td><td><code>create_draft</code></td></tr>
+          <tr><td>Send a new message, with files</td><td><code>send_message</code></td></tr>
+          <tr><td>Reply, or reply to everyone</td><td><code>reply_message</code>, <code>reply_all</code></td></tr>
+          <tr><td>Forward it</td><td><code>forward_message</code></td></tr>
+          <tr><td>Delete it</td><td><code>trash_message</code></td></tr>
+          <tr><td>Unsubscribe from this list</td><td><code>unsubscribe</code></td></tr>
+        </tbody>
+      </table>
+      <p>The full list and every argument are in the <a href="https://github.com/Falcao-SL/Selo/blob/main/docs/USE.md">usage guide</a>. Programs, installers, and scripts are not downloaded. Unsubscribe uses the list's <code>List-Unsubscribe</code> header.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>A Falcao SL tool. MIT. Public. The sheet is not a live site yet: the public page is the <a href="https://github.com/Falcao-SL/Selo">GitHub repository</a>. Contact <a href="mailto:dev@falcaosl.com">dev@falcaosl.com</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selo — o Mail da Apple para um agente de código</title>
+<meta name="description" content="O Selo é um servidor MCP local. Ele usa o aplicativo Mail deste Mac: lê, responde, responde a todos, encaminha, anexa, envia, baixa anexo, exclui para a Lixeira, descadastra e aponta mensagem suspeita.">
+<link rel="canonical" href="https://github.com/Falcao-SL/Selo">
+<link rel="alternate" hreflang="en" href="https://github.com/Falcao-SL/Selo/blob/main/site/index.html">
+<link rel="alternate" hreflang="pt-BR" href="https://github.com/Falcao-SL/Selo/blob/main/site/index.pt.html">
+<link rel="alternate" hreflang="x-default" href="https://github.com/Falcao-SL/Selo">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Selo — o Mail da Apple para um agente de código">
+<meta property="og:description" content="Servidor MCP local e aberto para o Mail deste Mac. Envia, responde, anexa, exclui para a Lixeira e descadastra de verdade.">
+<meta property="og:url" content="https://github.com/Falcao-SL/Selo">
+<link rel="icon" href="selo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&family=Space+Grotesk:wght@600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.pt.html"><img src="selo.svg" width="28" height="28" alt="">Selo</a>
+    <nav aria-label="Idioma">
+      <a href="index.html">English</a>
+      <a href="index.pt.html" aria-current="page">Português</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap hero">
+    <div>
+      <p class="kicker">macOS · Mail.app · MCP · MIT</p>
+      <h1>O Mail da Apple, para o agente deste Mac.</h1>
+      <p class="lead">O Selo é um servidor MCP local. Ele usa as contas que já estão no aplicativo Mail. Ele lê, responde, responde a todos, encaminha, anexa arquivo, envia, baixa anexo, exclui para a Lixeira, descadastra de uma lista e aponta sinais de mensagem suspeita.</p>
+      <p>Enviar, responder, encaminhar, excluir e descadastrar acontecem de verdade. Excluir vai para a Lixeira do Mail. A checagem de suspeita é uma heurística local, não um antivírus. O Selo não guarda senha e não tem servidor próprio.</p>
+      <p class="actions"><a class="btn" href="https://github.com/Falcao-SL/Selo/blob/main/docs/USO.md">Como usar</a><a class="ghost" href="https://github.com/Falcao-SL/Selo">Repositório</a></p>
+    </div>
+    <img src="selo.svg" width="96" height="96" alt="">
+  </div>
+  <section>
+    <div class="wrap">
+      <h2>O que o agente pode pedir</h2>
+      <table>
+        <thead><tr><th>Pedido</th><th>Ferramenta</th></tr></thead>
+        <tbody>
+          <tr><td>O que está não lido?</td><td><code>unread_summary</code></td></tr>
+          <tr><td>Lê esta mensagem</td><td><code>read_message</code></td></tr>
+          <tr><td>Ela parece suspeita?</td><td><code>check_message</code></td></tr>
+          <tr><td>Baixa o anexo</td><td><code>save_attachment</code></td></tr>
+          <tr><td>Abre um rascunho, sem enviar</td><td><code>create_draft</code></td></tr>
+          <tr><td>Envia um e-mail novo, com arquivo</td><td><code>send_message</code></td></tr>
+          <tr><td>Responde, ou responde a todos</td><td><code>reply_message</code>, <code>reply_all</code></td></tr>
+          <tr><td>Encaminha</td><td><code>forward_message</code></td></tr>
+          <tr><td>Exclui</td><td><code>trash_message</code></td></tr>
+          <tr><td>Descadastra esta lista</td><td><code>unsubscribe</code></td></tr>
+        </tbody>
+      </table>
+      <p>A lista completa e cada argumento estão no <a href="https://github.com/Falcao-SL/Selo/blob/main/docs/USO.md">guia de uso</a>. Programa, instalador e script não são baixados. O descadastro usa o cabeçalho <code>List-Unsubscribe</code> da lista.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Uma ferramenta da Falcao SL. MIT. Pública. A ficha ainda não é um site no ar: a página pública é o <a href="https://github.com/Falcao-SL/Selo">repositório no GitHub</a>. Contato <a href="mailto:dev@falcaosl.com">dev@falcaosl.com</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

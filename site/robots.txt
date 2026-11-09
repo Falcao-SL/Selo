@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+# The sheet is not deployed. The public page is https://github.com/Falcao-SL/Selo
